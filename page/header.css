@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.journal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tittle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  z-index: 4;
+}
+
+.tittle__logo {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.tittle__name {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 5;
+  font-family: 'Druk Cyr', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #F6ED54;
+  text-shadow: #22201E 3px 3px;
+  margin: auto 0;
+}
+
+.tittle__number {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 5;
+  font-family: 'Druk Cyr', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #F6ED54;
+  text-shadow: #22201E 3px 3px;
+  margin: auto 0;
+}
+
+.jornal__link {
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
+  font-family: 'Druk Cyr', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #F6ED54;
+  text-shadow: #22201E 2px 2px;
+  margin: auto 0;
+  background: rgb(221, 90, 67);
+  padding: 0 5px;
+  transition-duration: .15s;
+}
+
+.jornal__link:hover {
+  box-shadow: 5px 5px #22201E;
+}
+
+.arrow__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  position: absolute;
+}
+
+.slick-arrow {
+  cursor: pointer;
+  font-family: 'Druk Cyr', sans-serif;
+  font-size: 80px;
+  line-height: 20px;
+  font-weight: 900;
+  color: #F6ED54;
+  text-shadow: #22201E 3px 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: center;
+  transition-duration: .25s;
+  padding: 0;
+  margin: 20px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.journal__pattern {
+  width: 700px;
+  height: 6000px;
+  background-image: url(../images/panelka.jpg);
+  background-repeat: repeat;
+  animation-duration: 500s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: -600px;
+  }
+
+  50% {
+    margin-top: -5000px;
+  }
+
+  100% {
+    margin-top: -600px;
+  }
+}

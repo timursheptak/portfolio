@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Pixel', sans-serif;
+  src: url('ms-sans-serif-pixel.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Druk Cyr', sans-serif;
+  src: url('fonts/DrukCyr-Heavy.ttf') format('truetype');
+}
